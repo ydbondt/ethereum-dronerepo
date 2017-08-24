@@ -1,1 +1,0 @@
-module.exports = require("npm:utf8@2.1.2/utf8.js");
