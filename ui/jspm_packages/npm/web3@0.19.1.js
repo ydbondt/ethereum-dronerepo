@@ -1,0 +1,1 @@
+module.exports = require("npm:web3@0.19.1/index.js");

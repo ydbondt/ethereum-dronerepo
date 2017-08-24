@@ -1,0 +1,16 @@
+<template>
+
+	<select style="float: right;" value.bind="client.eth.defaultAccount" change.delegate="loadDrones()">
+		<option repeat.for="a of accounts" value.bind="a">${a}</option>
+	</select>
+	<br/>
+	<div repeat.for="drone of drones[0]">
+		Name: ${client.toAscii(drone)}</span>
+	</div>
+
+	<form submit.delegate="save()">
+		Drone name: <input type="text" value.bind="name"><br/>
+		Serial number: <input type="text" value.bind="serialnumber"><br/>
+		<input type="submit" value="Add" />
+	</form>
+</template>
